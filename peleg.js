@@ -19,8 +19,8 @@
     url: 'https://education.burnsfilmcenter.org',
     description: 'Freelance Project - Education branch of the Jacob Burns Film Center.'
   }, {
-    name: 'artsicle',
-    url: 'http://artsicle.com',
+    name: 'Artsicle',
+    url: 'https://artsicle.com',
     description: 'Previous Workplace - Mapping the world\'s artists.'
   }, {
     name: 'Teachers Pay Teachers',
@@ -29,7 +29,11 @@
   }, {
     name: 'Ugh, Code',
     url: 'http://ughco.de',
-    description: 'An introductory programming book.'
+    description: 'Introductory programming book.'
+  }, {
+    name: 'Komnt',
+    url: 'https://chrome.google.com/webstore/detail/komnt/ocopajchgbhmlkcfbppfiegapgjneppa',
+    description: 'Chrome extension to annotate the web.'
   }];
 
   var globalCommands = {
