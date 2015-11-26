@@ -127,17 +127,6 @@
       }
     },
 
-    exit: {
-      func: function () {
-        customInput('Are you sure? (y/n)', {
-          y: function () {
-            w.open('', '_self', '').close();
-          },
-          n: EMPTYFUNC
-        });
-      }
-    },
-
     song: {
       func: function () {
         if (!songEl.innerHTML.length) {
