@@ -17,7 +17,7 @@
   var projects = [{
     name: 'Burns Film Center - Education',
     url: 'https://education.burnsfilmcenter.org',
-    description: 'Freelance Project - Education branch of the jacob burns film center.'
+    description: 'Freelance Project - Education branch of the Jacob Burns Film Center.'
   }, {
     name: 'artsicle',
     url: 'http://artsicle.com',
