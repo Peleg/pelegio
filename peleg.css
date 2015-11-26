@@ -8,7 +8,7 @@ html, body {
 .terminal {
   overflow-x: hidden;
   top: 5%;
-  min-height: 53%;
+  min-height: 47%;
   max-width: 700px;
   margin: 0 auto;
   position: relative;
