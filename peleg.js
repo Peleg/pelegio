@@ -136,10 +136,10 @@
         if (!songEl.innerHTML.length) {
           output('Loading...');
           var iframe = d.createElement('iframe');
-          iframe.src = "http://www.youtube.com/embed/uw3wL15qD1g?autoplay=1";
+          iframe.src = "http://www.youtube.com/embed/8m5C_1bW5Ec?autoplay=1";
           iframe.style.display = 'none';
           iframe.onload = function() {
-            output('Playing: La Femme - It\'s Time to Wake Up (2023)');
+            output('Playing: Lord Echo - Thinking of You');
           };
           songEl.appendChild(iframe);
         }
