@@ -161,6 +161,7 @@
 
     d.onkeydown = keyDownHandler;
     d.onclick = focusInputEl;
+    inputEl.onkeyup = keyUpHandler;
     inputEl.onmousedown = mouseDownHandler;
 
     output('<p class="old">> Welcome! My name is Peleg.</p>');
@@ -171,6 +172,16 @@
     if (typeof (func = keyMap[e.keyCode]) === 'function') {
       e.preventDefault();
       func();
+    }
+  }
+
+  /**
+   * chrome for android does not give correct keycodes
+   */
+  function keyUpHandler(e) {
+    if (/\n/.test(inputField.textContent)) {
+      e.preventDefault();
+      keyMap[13]();
     }
   }
 
