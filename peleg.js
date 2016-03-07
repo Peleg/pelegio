@@ -84,7 +84,7 @@
       func: function () {
         customInput('Open Github profile? (y/n)', {
           y: function () {
-            w.open('http://www.github.com/pelegr', '_blank');
+            w.open('http://www.github.com/peleg', '_blank');
           },
           n: EMPTYFUNC
         })
