@@ -7,12 +7,15 @@
 
   var keyMap = {
     37: EMPTYFUNC,
-    38: EMPTYFUNC,
+    38: historyLast,
     39: EMPTYFUNC,
-    40: EMPTYFUNC,
+    40: historyNext,
     13: executeCommand,
     9: insertBestMatch
   };
+
+  var history = [];
+  var historyPointer = 0;
 
   var projects = [{
     name: 'Burns Film Center - Education',
@@ -227,6 +230,8 @@
         txt += header + LINEBREAK + Array(header.length + 1).join('-') + LINEBREAK;
       var func = typeof command === 'function' ? command : command.func;
       txt += func.apply(this, parts.slice(1)) || '';
+      history.push(parts.join(' '));
+      historyPointer = history.length;
     } else {
       txt = 'Unknown command. Type "commands" for a list of available commands.';
     }
@@ -261,6 +266,20 @@
 
     if (commands.length === 1)
       insertInput(commands[0]);
+  }
+
+  function historyLast () {
+    if (historyPointer > 0) {
+      var command = history[--historyPointer];
+      insertInput(command);
+    }
+  }
+
+  function historyNext () {
+    if (historyPointer < history.length) {
+      var command = history[++historyPointer] || '';
+      insertInput(command);
+    }
   }
 
 }(window, document);
