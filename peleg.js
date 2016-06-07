@@ -31,7 +31,7 @@
     description: 'Current Workplace - An educators\' marketplace.'
   }, {
     name: 'Ugh, Code',
-    url: 'http://ughco.de',
+    url: 'http://www.amazon.com/Ugh-Code-Introduction-Programming-Slightly/dp/1533278105',
     description: 'Introductory programming book.'
   }, {
     name: 'Komnt',
