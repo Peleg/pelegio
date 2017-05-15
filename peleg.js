@@ -139,10 +139,10 @@
         if (!songEl.innerHTML.length) {
           output('Loading...');
           var iframe = d.createElement('iframe');
-          iframe.src = "http://www.youtube.com/embed/8m5C_1bW5Ec?autoplay=1";
+          iframe.src = "http://www.youtube.com/embed/JmQi3UX_9WE?autoplay=1";
           iframe.style.display = 'none';
           iframe.onload = function() {
-            output('Playing: Lord Echo - Thinking of You');
+            output('Playing: HNNY - Cheer Up, My Brother');
           };
           songEl.appendChild(iframe);
         }
